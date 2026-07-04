@@ -10,16 +10,16 @@ phases:
     commands:
       - echo "CI validation started"
       - echo "Checking whether index.html exists"
-      - test -f index.html
+      - test -f Index.html
       - echo "Checking whether Attari Classes text exists"
-      - grep -q "Attari Classes" index.html
+      - grep -q "Attari Classes" Index.html
       - echo "CI validation passed"
 
   build:
     commands:
       - echo "Build phase started"
       - mkdir -p build
-      - cp index.html build/
+      - cp Index.html build/
       - echo "Build completed successfully"
 
 artifacts:
