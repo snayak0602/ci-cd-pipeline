@@ -9,7 +9,7 @@ phases:
   pre_build:
     commands:
       - echo "CI validation started"
-      - echo "Checking whether index.html exists"
+      - echo "Checking whether Index.html exists"
       - test -f Index.html
       - echo "Checking whether Attari Classes text exists"
       - grep -q "Attari Classes" Index.html
